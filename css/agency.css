@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-muted {
@@ -42,7 +42,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: red;
 }
 
 h1,
@@ -136,7 +136,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
     border-color: #f6bf01;
     color: #fff;
-    background-color: #fec503;
+    background-color: rgba(51, 122, 183, 1);
 }
 
 .btn-xl:active,
@@ -171,7 +171,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #fff;
 }
 
 .navbar-default .navbar-brand {
@@ -183,7 +183,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: red;
 }
 
 .navbar-default .navbar-collapse {
@@ -209,7 +209,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: red;
 }
 
 .navbar-default .nav li a:hover,
@@ -265,7 +265,8 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header2-bg.jpg);
+    background-color: white;
+    <!--background-image: url(../img/header2-bg.jpg);-->
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -276,7 +277,7 @@ header {
 
 header .intro-text {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 header .intro-text .intro-lead-in {
@@ -298,8 +299,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 150px;
+        padding-bottom: 100px;
     }
 
     header .intro-text .intro-lead-in {
@@ -336,6 +337,7 @@ section h3.section-subheading {
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
+    line-height:24px;
     font-weight: 400;
 }
 
@@ -367,7 +369,7 @@ section h3.section-subheading {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(254,209,54,.9);
+    background: rgba(51, 122, 183, .9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -976,3 +978,31 @@ input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background: rgba(0, 0, 0, 0.8);
 }
+
+img {
+display:block;
+height: auto;
+max-width: 100%;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+.fade-in {
+ opacity:0;  /* make things invisible upon start */
+ -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+ -moz-animation:fadeIn ease-in 1;
+ animation:fadeIn ease-in 1;
+ 
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+ 
+ -webkit-animation-duration:1s;
+ -moz-animation-duration:1s;
+ animation-duration:1s;
+}
+
+.intro-social {
+    padding-top:40px;
+} 
